@@ -1,5 +1,5 @@
-var DrifeToken = artifacts.require("./DrifeToken.sol");
+var DrifeERCToken = artifacts.require("./DrifeERCToken.sol");
 
 module.exports = async function (deployer) {
-  await deployer.deploy(DrifeToken);
+  await deployer.deploy(DrifeERCToken);
 };

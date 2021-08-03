@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: Apache License, Version 2.0
-pragma solidity 0.8.5;
+// SPDX-License-Identifier: Apache-2.0
+pragma solidity ^0.8.5;
 
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
+import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @dev {ERC20} token implementing the {IERC20} interface, including:
@@ -34,7 +34,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * revert instead of returning `false` on failure. This behavior is nonetheless
  * conventional and does not conflict with the expectations of ERC20 applications.
  */
-contract DrifeToken is ERC20Burnable, ERC20Pausable, Ownable {
+contract DrifeERCToken is ERC20Burnable, ERC20Pausable, Ownable {
     /**
      * @dev Mints an initial supply of 3.25 Billion DRF tokens with 18 decimals and
      * transfers them to deploying address which is also made the contract `owner`.
